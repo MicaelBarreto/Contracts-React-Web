@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Switch, Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import './App.css';
+import "bootstrap/dist/css/bootstrap.css";
+import "assets/sass/paper-dashboard.scss?v=1.1.0";
+// import "assets/demo/demo.css";
+import "perfect-scrollbar/css/perfect-scrollbar.css";
+
+import Header from './partials/Header';
+import Sidebar from './partials/Sidebar';
+import Dashboard from './pages/dashboard/Dashboard';
+
+const App = () => (
+  <div className="App">
+    <Header />
+    <Sidebar />
+    <Switch>
+      <Route exact path='/' component={Dashboard} />
+      {/* <Route path='/shop' component={ShopPage} />
+      <Route path='/sign' component={Sign} /> */}
+    </Switch>
+  </div>
+);
 
 export default App;
