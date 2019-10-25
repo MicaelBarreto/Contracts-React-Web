@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavItem, Nav } from "react-bootstrap";
 
-const Nav = ({ name }) => (
+const HeaderNav = ({ name }) => (
     <div>
         <Nav>
             <NavItem eventKey={1} href="#">
@@ -23,4 +23,4 @@ const Nav = ({ name }) => (
     </div>
 );
 
-export default Nav;
+export default HeaderNav;

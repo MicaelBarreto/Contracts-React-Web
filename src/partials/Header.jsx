@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Navbar } from 'react-bootstrap';
 
-import Navs from '../components/header-nav/Nav';
+import HeaderNav from '../components/header-nav/Header-Nav';
 
 function Header(props) {
     const [exists, setExists] = useState(false);
@@ -31,7 +31,7 @@ function Header(props) {
                 <Navbar.Toggle onClick={mobileSidebarToggle} />
             </Navbar.Header>
             <Navbar.Collapse>
-                <Navs />
+                <HeaderNav />
             </Navbar.Collapse>
         </Navbar>
     );
