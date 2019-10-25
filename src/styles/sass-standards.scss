@@ -1,0 +1,9 @@
+@import './colors.scss';
+@import './sizes.scss';
+
+@mixin middle() {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}

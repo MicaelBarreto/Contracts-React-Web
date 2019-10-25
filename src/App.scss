@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+
+.App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-family: 'PT Sans', sans-serif;
+
+  .content {
+    width: 80%;
+    height: 100%;
+  }
+}
