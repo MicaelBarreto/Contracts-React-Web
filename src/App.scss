@@ -1,13 +1,33 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+@import './styles/sass-standards.scss';
 
-.App {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  font-family: 'PT Sans', sans-serif;
+body {
+  font-family: Roboto,Helvetica Neue,Arial,sans-serif;
 
-  .content {
-    width: 80%;
+  .App {
+    width: 100%;
     height: 100%;
+    display: flex;
+  
+    .content {
+      width: 85%;
+      height: 93%;
+      bottom: 0;
+      right: 0;
+      position: fixed;
+      float: right;
+      background-color: $background;
+
+      .inner {
+        margin: 1%;
+      }
+
+      @media #{$tablet-size} {
+        width: 100%;
+      }
+
+      @media #{$phone-size} {
+        width: 100%;
+      }
+    }
   }
 }
