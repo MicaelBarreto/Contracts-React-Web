@@ -1,1 +1,10 @@
-@import './standards/buttons.scss';
+@import './buttons.scss';
+@import './colors.scss';
+
+.inner-content {
+    background-color: $primary;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}

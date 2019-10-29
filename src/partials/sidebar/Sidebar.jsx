@@ -10,7 +10,7 @@ const Sidebar = ({ show, handleSide }) => (
             <a className="close" onClick={handleSide}/>
             <Link to='/' className='name'>Contracts</Link>
         </div>
-        <Link to='/' className='side-item'>
+        <Link to='/contracts' className='side-item'>
             <div className='side-content'>                
                 <FontAwesomeIcon
                     icon="file-contract"
