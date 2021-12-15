@@ -23,7 +23,7 @@ function App(){
           <div className='inner'>
             <Route exact path='/' component={Dashboard} />
             <Route exact path='/companies' component={Contracts} />
-            <Route exact path='/contracts' />
+            <Route exact path='/contracts' component={Contracts} />
             <Route exact path='/users' />
             <Route exact path='/payments' />      
           </div>
